@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="screenFade"></div>
+
+    <div class="smallcolumns"></div>
+    <div class="bigcolumns clickable" onclick="showModal()"></div>
+    <div class="smallcolumns">
+      <div class="bigspace"></div>
+      <div class="smallspace center-content contain-image">
+        <img
+          class="clickable"
+          src="Images/arrow2.png"
+          onclick="nextEscapeRoomPage()"
+        />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+
+  <!-- MODAL -->
+  <div id="imagemodal" class="modal" onclick="closeModal()">
+    <img class="modal-content" id="modalimg" src="Images/Poster.png" />
+
+    <!-- CHARACTER THOUGHT TEXT -->
+    <div id="thoughtText" class="thought">
+      I'm for sure getting that money, let me head over there.
+    </div>
+  </div>
+  <audio id="bgMusic" src="Audio/background.mp3" loop></audio>
+  <audio id="modalSound" src="Audio/paper.mp3"></audio>
+  <audio id="steps" src="Audio/steps.mp3"></audio>
+</html>
