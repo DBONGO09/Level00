@@ -13,7 +13,7 @@ function nextEscapeRoomPage() {
 
   // after fade completes + extra delay → go to next page
   setTimeout(() => {
-    window.location.href = "https://4mjpjs.csb.app/";
+    window.location.href = "https://dbongo09.github.io/Level1/";
   }, 5000); // adjust to match fade duration
 }
 
